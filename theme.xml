@@ -1,0 +1,266 @@
+<!-------------------------------------------------------------------------
+---------------------------------------------------------------------------
+
+theme name:     Super Retroboy HD Theme
+version:        1.2
+creator:		Travis Wilson (KALEL1981 / Super Retro City)
+email:          SuperRetroCity@gmail.com
+
+---------------------------------------------------------------------------
+-------------------------------------------------------------------------->
+
+<?xml version="1.0" encoding="UTF-8"?>
+<theme>
+   <formatVersion>4</formatVersion>
+
+<feature supported="carousel">
+   <view name="system">
+      <carousel name="systemcarousel">
+        <type>vertical</type>
+        <pos>0.0 0.0</pos>
+        <logoAlignment>middle</logoAlignment>         
+        <size>1 1</size>
+        <logoScale>1.5</logoScale>
+        <zIndex>5</zIndex>          
+        <logoSize>0.46 0.46</logoSize>
+        <color>00000000</color>
+        <maxLogoCount>3</maxLogoCount>       
+      </carousel>
+      <image name="background" extra="true">
+        <origin>0 0</origin>
+        <pos>0 0</pos>
+        <size>1 1</size>
+        <zIndex>2</zIndex>                 
+        <path>./_inc/images/background.png</path>
+      </image>                      
+      <text name="systemInfo">     
+        <pos>1 1</pos>
+        <backgroundColor>00000000</backgroundColor>
+        <color>ffffff</color>
+        <fontPath>./_inc/fonts/font_main.otf</fontPath>
+	    <fontSize>0.04</fontSize>
+        <zIndex>1</zIndex>	     
+      </text>            
+   </view>
+</feature>
+
+   <view name="system">
+      <helpsystem name="help">
+        <fontPath>./_inc/fonts/font_main.otf</fontPath>
+        <fontSize>0.025</fontSize>     
+        <pos>1 1</pos>      
+        <textColor>ffffff</textColor>
+        <iconColor>ffffff</iconColor>
+      </helpsystem>
+   </view>  
+
+   <view name="detailed,video,basic">
+      <helpsystem name="help">
+        <fontPath>./_inc/fonts/font_main.otf</fontPath>
+        <fontSize>0.024</fontSize>     
+        <pos>0.019 0.968</pos>      
+        <textColor>ffffff</textColor>
+        <iconColor>ffffff</iconColor>
+      </helpsystem>
+   </view>  
+
+   <view name="basic,detailed,video">
+      <textlist name="gamelist">      
+        <selectorColor>00000000</selectorColor>
+        <selectedColor>2883ff</selectedColor>
+        <primaryColor>ffffff</primaryColor>
+        <secondaryColor>ff00f0</secondaryColor>
+        <fontPath>./_inc/fonts/font_main.otf</fontPath>
+        <fontSize>0.0415</fontSize>
+        <forceUppercase>1</forceUppercase>
+        <lineSpacing>1.4</lineSpacing>
+        <zIndex>5</zIndex>                          
+      </textlist>
+   </view> 
+   
+   <view name="detailed,video">
+      <textlist name="gamelist">                          
+        <pos>0.02 0.01</pos>
+        <size>0.48 0.96</size>
+        <alignment>left</alignment>                       
+      </textlist>
+   </view>
+   
+   <view name="basic">
+      <textlist name="gamelist">                          
+        <pos>0.02 0.16</pos>
+        <size>0.96 0.8</size>
+        <alignment>center</alignment>                       
+      </textlist>
+   </view>
+   
+   <view name="basic">
+      <image name="background" extra="true">
+        <origin>0 0</origin>
+        <pos>0 0</pos>
+        <size>1 1</size>        
+        <path>./_inc/images/background_basic.png</path>
+        <zIndex>3</zIndex>          
+      </image>                
+   </view> 
+    
+   <view name="detailed,video">
+      <image name="background" extra="true">
+        <origin>0 0</origin>
+        <pos>0 0</pos>
+        <size>1 1</size>        
+        <path>./_inc/images/background_video.png</path>
+        <zIndex>3</zIndex>         
+      </image>               
+   </view>     
+   
+   <view name="detailed">
+      <image name="md_image">
+        <origin>0.5 0.5</origin>
+        <pos>0.75 0.73</pos>
+        <maxSize>0.45 0.45</maxSize>
+        <zIndex>5</zIndex>         
+      </image>      
+   </view>
+
+   <view name="video">   
+      <video name="md_video">
+        <origin>0.5 0.5</origin>
+        <pos>0.75 0.73</pos>
+        <maxSize>0.45 0.45</maxSize>
+        <delay>1</delay>
+        <zIndex>5</zIndex>         
+        <showSnapshotNoVideo>true</showSnapshotNoVideo>
+        <showSnapshotDelay>true</showSnapshotDelay>
+      </video>             
+   </view>
+   
+   <view name="detailed,video">
+      <text name="md_lbl_rating, md_lbl_players, md_lbl_genre, md_lbl_developer, md_lbl_publisher, md_lbl_releasedate, md_lbl_playcount, md_lbl_lastplayed">
+        <origin>0 0</origin>
+        <fontPath>./_inc/fonts/font_main.otf</fontPath>
+        <color>2883ff</color>
+        <fontSize>0.04</fontSize>
+      </text>
+      <text name="md_rating, md_players, md_genre, md_developer, md_publisher, md_releasedate, md_playcount, md_lastplayed, md_marquee, md_description">
+        <origin>0 0</origin>
+        <fontPath>./_inc/fonts/font_main.otf</fontPath>
+        <color>ffffff</color>
+        <fontSize>0.04</fontSize>
+      </text>
+      <text name="md_lbl_rating">
+        <origin>0.5 0.5</origin>      
+        <pos>.726 .47</pos>
+        <size>0.4 0.1</size>
+        <zIndex>5</zIndex>
+      </text>   
+      <rating name="md_rating"> 
+        <origin>0.5 0.5</origin>       
+        <pos>.865 .47</pos>
+        <size>0.04 0.034</size>
+        <zIndex>5</zIndex>
+        <filledPath>./_inc/images/full.png</filledPath>
+        <unfilledPath>./_inc/images/hollow.png</unfilledPath>
+      </rating>
+      <text name="md_lbl_players">
+        <pos>1 1</pos>
+        <size>0 0</size>
+        <alignment>left</alignment>
+        <zIndex>5</zIndex> 
+      </text>
+      <text name="md_players">
+        <pos>1 1</pos>
+        <size>0 0</size>
+        <alignment>right</alignment>
+        <zIndex>5</zIndex>
+      </text>
+      <text name="md_lbl_genre">      
+        <pos>1 1</pos>
+        <size>0 0</size>
+        <alignment>left</alignment>
+        <zIndex>5</zIndex>
+      </text>
+      <text name="md_genre">
+        <pos>1 1</pos>
+        <size>0 0</size>
+        <alignment>right</alignment>
+        <zIndex>5</zIndex>
+      </text>
+      <text name="md_lbl_developer">
+        <origin>0.5 0.5</origin>
+        <pos>.726 .42</pos>
+        <size>0.4 0.1</size>
+        <zIndex>5</zIndex> 
+      </text>
+      <text name="md_developer">
+        <origin>0.5 0.5</origin>
+        <pos>.85 .42</pos>
+        <size>0.24 0.01</size>
+        <alignment>right</alignment>
+        <zIndex>5</zIndex>
+      </text>
+      <text name="md_lbl_publisher">
+        <origin>0.5 0.5</origin>
+        <pos>.726 .37</pos>
+        <size>0.4 0.1</size>
+        <zIndex>5</zIndex>                  
+      </text>
+      <text name="md_publisher">
+        <origin>0.5 0.5</origin>
+        <pos>.85 .37</pos>
+        <size>0.24 0.01</size>
+        <alignment>right</alignment>
+        <zIndex>5</zIndex>         
+      </text>  
+      <text name="md_lbl_releasedate">
+        <origin>0.5 0.5</origin>
+        <pos>.726 .32</pos>
+        <size>0.4 0.1</size>
+        <zIndex>5</zIndex>                  
+      </text>
+      <datetime name="md_releasedate">
+        <origin>0.5 0.5</origin>
+        <pos>.85 .32</pos>
+        <size>0.24 0.01</size>
+        <alignment>right</alignment>
+        <zIndex>5</zIndex>         
+      </datetime>
+      <text name="md_lbl_playcount">
+        <pos>1 1</pos>
+        <size>0 0</size>
+        <alignment>left</alignment>
+        <zIndex>5</zIndex>
+      </text>
+      <text name="md_playcount">
+        <pos>1 1</pos>
+        <size>0 0</size>
+        <alignment>right</alignment>       
+        <zIndex>5</zIndex>
+      </text>
+      <text name="md_lbl_lastplayed">
+        <pos>1 1</pos>
+        <size>0 0</size>
+        <zIndex>1</zIndex>
+      </text>
+      <text name="md_lastplayed">
+        <pos>1 1</pos>
+        <size>0 0</size>
+        <zIndex>1</zIndex>
+      </text>
+      <image name="md_marquee">
+        <pos>1 1</pos>
+        <origin>0.5 0.5</origin>
+        <maxSize>0 0</maxSize>
+        <zIndex>1</zIndex>         
+      </image>
+      <text name="md_description">
+        <pos>1 1</pos>
+        <size>0 0</size>
+        <fontSize>0.02</fontSize>
+        <forceUppercase>0</forceUppercase>
+        <lineSpacing>1.6</lineSpacing>
+        <zIndex>1</zIndex>
+      </text>
+   </view>
+   
+</theme>
